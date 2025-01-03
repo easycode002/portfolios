@@ -1,0 +1,43 @@
+/* app/globals.css */
+
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ubuntu-Bold font */
+@font-face {
+  font-family: "Ubunto-Bold";
+  src: url("../public/fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Ubuntu-Light font */
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url("../public/fonts/Ubuntu-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Ubuntu-Regular font */
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("../public/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Ubuntu-Regular font */
+@font-face {
+  font-family: "Kantumruy";
+  src: url("../public/fonts/Kantumruy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global font style */
+body {
+  font-family: "Ubuntu-Light", sans-serif;
+}
