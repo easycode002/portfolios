@@ -1,5 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
 
-https://github.com/JavascriptFolks/React-Deployment/blob/main/public/manifest.json
+# Host
+Host: https://portfolio-three-iota-15.vercel.app
+
+# Sitemaps
+Sitemap: https://portfolio-three-iota-15.vercel.app/sitemap.xml
