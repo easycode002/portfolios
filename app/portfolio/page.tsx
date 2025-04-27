@@ -10,6 +10,7 @@ const categories: Category[] = [
   { id: "2", name: "Web" },
   { id: "3", name: "App" },
   { id: "4", name: "Design" },
+  { id: "5", name: "Data" },
 ];
 
 const Portfolio = () => {

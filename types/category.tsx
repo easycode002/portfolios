@@ -9,5 +9,5 @@ export interface Project {
 
 export interface Category {
   id: string;
-  name: "All" | "Web" | "App" | "Design";
+  name: "All" | "Web" | "App" | "Design"| "Data";
 }

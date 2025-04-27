@@ -23,8 +23,7 @@ import {
 import { SkillProps } from "@/types/skill";
 
 export const languageSkills = [
-  { name: "Python", percentage: 65 },
-  { name: "PHP", percentage: 60 },
+  { name: "Python", percentage: 70 },
   { name: "Java", percentage: 50 },
 ];
 

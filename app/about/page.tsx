@@ -16,48 +16,59 @@ const About = () => {
   ];
 
   return (
-    <div className="container mx-auto mb-6 mt-12 px-4 py-8 md:py-12 lg:py-16">
-      <div className="text-center mb-8 md:mb-12">
-        <h2 className="text-center mb-3 text-2xl md:text-3xl lg:text-4xl font-ubuntubold uppercase underline underline-offset-4">
-          About me
-        </h2>
-      </div>
+    <div className="min-h-screen w-full bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+        <div className="max-w-6xl mx-auto">
+          <header className="mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-ubuntubold uppercase">
+              <span className="border-b-2 border-gray-800 pb-2">About me</span>
+            </h2>
+          </header>
 
-      <div className="flex flex-col md:flex-row gap-8 lg:gap-12">
-        {/* Profile Image */}
-        <div className="flex justify-center md:w-1/3 lg:w-1/4">
-          <Image
-            src={profile}
-            alt="My profile"
-            className="w-48 md:w-64 lg:w-80 h-auto rounded-lg shadow-lg object-cover"
-          />
-        </div>
-
-        {/* Personal Information */}
-        <div className="md:w-2/3 lg:w-3/4">
-          <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-6">
-            My Personal Information
-          </h3>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {personalInfo.map((info, index) => (
-              <div
-                key={index}
-                className="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition-colors duration-300"
-              >
-                <PlayIcon
-                  width={16}
-                  height={16}
-                  className="text-gray-900 flex-shrink-0"
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+            {/* Profile Image */}
+            <div className="flex justify-center lg:justify-start lg:w-1/3">
+              <div className="relative w-56 sm:w-64 lg:w-full max-w-sm aspect-square">
+                <Image
+                  src={profile}
+                  alt="My profile"
+                  fill
+                  className="rounded-xl shadow-lg object-cover"
+                  sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 384px"
+                  priority
                 />
-                <div className="flex space-x-2">
-                  <span className="font-semibold text-gray-800">
-                    {info.label}:
-                  </span>
-                  <span className="text-gray-600">{info.value}</span>
-                </div>
               </div>
-            ))}
+            </div>
+
+            {/* Personal Information */}
+            <div className="flex-1 lg:w-2/3">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-6 sm:mb-8">
+                My Personal Information
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                {personalInfo.map((info, index) => (
+                  <div
+                    key={index}
+                    className="group flex items-start space-x-3 bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-all duration-300 hover:shadow-md"
+                  >
+                    <PlayIcon
+                      width={20}
+                      height={20}
+                      className="text-gray-900 flex-shrink-0 mt-1 group-hover:text-blue-600 transition-colors"
+                    />
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                      <span className="font-semibold text-gray-800 whitespace-nowrap">
+                        {info.label}:
+                      </span>
+                      <span className="text-gray-600 break-all">
+                        {info.value}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

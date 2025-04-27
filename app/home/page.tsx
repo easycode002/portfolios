@@ -20,7 +20,7 @@ const Home = () => {
         </h2>
 
         <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-1xl mx-auto leading-relaxed">
-          I am a skilled Data Analyst specializing in transforming complex
+          I am a skilled <strong>Data Analyst</strong> specializing in transforming complex
           datasets into actionable insights using Power BI, and advanced Excel.
           With expertise in MS SQL Server, MongoDB, and data integration, I
           deliver accurate analytics and impactful visualizations. My technical

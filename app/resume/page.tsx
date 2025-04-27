@@ -42,34 +42,47 @@ const Resume = () => {
             </h2>
             <Timeline>
               <Experience
-                title="Teacher Information Technologies (Part Time)"
-                company="CITO COMPUTER CENTER"
-                period="01-Feb-2024 - 25-May-2024"
+                title="SabaiCode Bootcamp 5"
+                // company="CITO COMPUTER CENTER"
+                project="Data Catalog"
+                role="Full Stack Developer"
+                period="06/2024 - 01/2025"
                 responsibilities={[
-                  "Designing and planning lessons that align with the course objectives",
-                  "Organizing assignments and exams to evaluate student progress",
-                  "Developing course materials, including lecture slides, practical exercises, and coding projects"
+                  "Designed and developed a data catalog project to ETL (Extract, Transform, Load) process and manage data collection from multiple sources.",
+                  "Implemented advance data cleaning technique to ensure data quality.",
+                  "Built interactive data visualizations to provide actionable insights for stakeholders, data-driven decision-making.",
+                  "Collaborate with team members to optimize workflow and enhance system performance."
                 ]}
               />
               <Experience
-                title="Web Developer"
-                company="SBK UNIVERSITY"
-                period="2023 - 15-Jan-2024"
+                title="Norton University Exhibition"
+                // company="SBK UNIVERSITY"
+                project="MultiGrab"
+                period="11/2023 - 12/2023"
                 responsibilities={[
-                  "Developed and maintained university website using HTML, CSS, JavaScript, and Laravel framework",
-                  "Implemented user-friendly web design with responsive and visually appealing interfaces",
-                  "Collaborated with stakeholders to design and execute website features",
-                  "Managed content management systems (CMS) for efficient website updates"
+                  "Download video from multiple streaming platform.",
+                  " User-friendly interface for easy navigation and functionality.",
+                  " Secure and optimize for large-scale downloads.",
                 ]}
               />
               <Experience
-                title="Volunteer"
-                company="SBK UNIVERSITY"
-                period="10-Aug-2022 - 2023"
+                title="SBK UNIVERSITY"
+                company="Volunteer SBK University"
+                period="04/2023 - 2024"
                 responsibilities={[
                   "Provided comprehensive student support through academic guidance",
                   "Acted as communication liaison between students and university faculty/staff",
                   "Supported institutional outreach by promoting events and maximizing student engagement"
+                ]}
+              />
+               <Experience
+                title="SPMS Hight School"
+                company="Volunteer Teacher Information"
+                period="02/2022 - 2023"
+                responsibilities={[
+                  " Delivered comprehensive instructional sessions on Microsoft Office suite (Word, Excel, PowerPoint).",
+                  "Provided personalized technical troubleshooting student challenges ",
+                  "Guided student research initiatives."
                 ]}
               />
             </Timeline>
